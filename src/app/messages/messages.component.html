@@ -1,0 +1,23 @@
+<div *ngIf="messageService.messages.length">
+    <div class="alert alert-success" role="alert">
+      <h2>{{title | translate}}</h2>
+      <div *ngFor='let message of messageService.messages' style="font-size:1.5em;color: black ;"> {{message | translate}} 
+        
+      </div>
+    </div>
+</div>
+<div *ngIf="messageService.errors.length">  
+  <div class="alert alert-danger" role="alert">
+    <h2>{{title | translate}}</h2>    
+    <div *ngFor='let error of messageService.errors' style="font-size:1.5em;color: black ;"> {{error | translate}} 
+
+    </div>
+  </div>
+</div>  
+
+  
+
+
+
+
+

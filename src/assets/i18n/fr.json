@@ -1,0 +1,22 @@
+{
+  "lang.firstname": "Prénom",
+  "lang.lastname": "Nom de famille",
+  "lang.email": "Courriel",
+  "lang.postalcode": "Code Postal",
+  "lang.validationerror": "Erreur de validation",
+  "lang.successful": "à succès",
+  "lang.validateemailformaterror": "veuillez entrer un email valide",
+  "lang.validatepostalcodeerror": "Veuillez entrer un code postal valide",
+  "lang.firstname.title": "Veuillez saisir le prénom",
+  "lang.lastname.title": "Veuillez saisir le nom de famille",
+  "lang.email.title": "Veuillez saisir l'e-mail",
+  "lang.postalcode.title": "Veuillez saisir le code postal",
+  "lang.email.format": "Veuillez saisir un e-mail valide",
+  "lang.postalcode.format": "Veuillez saisir un code postal valide",
+  "lang.userinfo": "informations de l'utilisateur",
+  "lang.userinfo.tooltip": "Veuillez saisir les informations de l'utilisateur",
+  "lang.ontario.logo": "Logo du gouvernement de l'Ontario",
+  "lang.submit": " Soumettre ",
+  "lang.submit.title": "Bouton de soumission",
+  "pep.resource.loaded": "true"
+}

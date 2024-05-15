@@ -1,0 +1,31 @@
+<form [formGroup]="userForm" (ngSubmit)="userSubmit()">
+  <fieldset class="fieldset-info">
+    <legend class="ontario-label"><img src="assets/ontario-design-system/icons/svg/ontario-icon-edit.svg" [title]="'lang.userinfo.tooltip' | translate" />{{ 'lang.userinfo' | translate }} </legend>
+    <div class="col-xs-22 col-md-7 col-lg-17"></div>
+    <div>
+          <div class="ontario-form-group">
+              <label  class="ontario-label" for="firstName">{{ 'lang.firstname' | translate }}:</label>
+              <input type="text" id="firstName" name="firstName" formControlName="firstName"
+                [title]="'lang.firstname.title' | translate" class="ontario-input" maxlength="30" style="font-size:1.5em;color: black ;">
+          </div>
+          <div class="ontario-form-group">
+              <label  class="ontario-label" for="lastName">{{ 'lang.lastname' | translate }}:</label>
+              <input type="text" class="ontario-input" id="lastName" name="lastName" formControlName="lastName"
+                 [title]="'lang.lastname.title' | translate" maxlength="30" style="font-size:1.5em;color: black ;"/>
+        </div>
+          <div class="ontario-form-group">
+              <label  class="ontario-label" for="email">{{ 'lang.email' | translate }}:</label>
+              <input type="text" id="email" class="ontario-input" name="email" formControlName="email"
+                [title]="'lang.email.title' | translate" (focusout)="validateEmail()"style="font-size:1.5em;color: black ;" />
+          </div>
+          <div class="ontario-form-group">
+              <label  class="ontario-label" for="postalcode">{{ 'lang.postalcode' | translate }}:</label>
+              <input type="text" id="postalcode" class="ontario-input" name="postalcode" formControlName="postalcode"
+                [title]="'lang.postalcode.title' | translate" (focusout)="validatePostalCode()" style="font-size:1.5em;color: black ;"/>
+        </div>
+      <div>
+      </div>
+     </div>
+     <button (click)="userSubmit()" class="ontario-button ontario-button--primary" [title]="'lang.submit.title' | translate" style="font-size:1.5em;color: white ;">{{ 'lang.submit' | translate }}</button>
+  </fieldset>
+</form>
